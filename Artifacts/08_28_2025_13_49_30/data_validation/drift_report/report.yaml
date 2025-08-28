@@ -1,0 +1,93 @@
+Abnormal_URL:
+  drift_status: false
+  p_value: 0.9734545790368496
+DNSRecord:
+  drift_status: false
+  p_value: 0.9567950838314809
+Domain_registeration_length:
+  drift_status: false
+  p_value: 1.0
+Favicon:
+  drift_status: false
+  p_value: 0.6736652494431887
+Google_Index:
+  drift_status: false
+  p_value: 1.0
+HTTPS_token:
+  drift_status: false
+  p_value: 0.9956127615648805
+Iframe:
+  drift_status: false
+  p_value: 0.9999999997295194
+Links_in_tags:
+  drift_status: false
+  p_value: 1.0
+Links_pointing_to_page:
+  drift_status: false
+  p_value: 0.9614483549114261
+Page_Rank:
+  drift_status: false
+  p_value: 0.3872051413869312
+Prefix_Suffix:
+  drift_status: false
+  p_value: 1.0
+Redirect:
+  drift_status: false
+  p_value: 0.999991733805822
+Request_URL:
+  drift_status: false
+  p_value: 0.8534124262698983
+Result:
+  drift_status: false
+  p_value: 1.0
+RightClick:
+  drift_status: false
+  p_value: 1.0
+SFH:
+  drift_status: false
+  p_value: 1.0
+SSLfinal_State:
+  drift_status: false
+  p_value: 0.9999999797009747
+Shortining_Service:
+  drift_status: false
+  p_value: 0.9039295322201301
+Statistical_report:
+  drift_status: false
+  p_value: 0.985173487215412
+Submitting_to_email:
+  drift_status: false
+  p_value: 0.999999999988434
+URL_Length:
+  drift_status: false
+  p_value: 0.999586503698318
+URL_of_Anchor:
+  drift_status: false
+  p_value: 0.9999999999999148
+age_of_domain:
+  drift_status: false
+  p_value: 0.9999999989342155
+double_slash_redirecting:
+  drift_status: false
+  p_value: 0.8393562351530406
+having_At_Symbol:
+  drift_status: false
+  p_value: 1.0
+having_IP_Address:
+  drift_status: false
+  p_value: 0.4299721699953313
+having_Sub_Domain:
+  drift_status: false
+  p_value: 0.9939782507422366
+on_mouseover:
+  drift_status: false
+  p_value: 0.9783976116108047
+popUpWidnow:
+  drift_status: false
+  p_value: 0.6906258784339521
+port:
+  drift_status: false
+  p_value: 0.9999321298038519
+web_traffic:
+  drift_status: false
+  p_value: 0.9997115090643619
