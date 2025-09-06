@@ -106,7 +106,45 @@ This function is much better for your phishing detection project (binary classif
 
 ⚠️ But right now, your evaluate_models in utils is still using r2_score.
 👉 We should update it to use get_classification_score instead, so that the best model selection is based on F1/precision/recall rather than regression metrics.
- 
+
+## training_pipeline.py file
+In short: This class is the conductor of your ML orchestra 🎶 – it ensures all 
+steps (ingestion → validation → transformation → training → deployment) are executed in the correct order and safely stored in the cloud.
+
+## app.py file
+This is FastAPI app 🚀. This script is basically the deployment layer of your ML project.
+
+This file:
+1) Connects to MongoDB (for data source).
+2) Starts a FastAPI server.
+3) Provides two main routes:
+  /train → triggers ML pipeline training.
+  /predict → accepts a CSV, preprocesses it, predicts with trained model, and shows results in an HTML table.
+
+## main.py file
+This script is essentially your pipeline runner in a more manual (step-by-step) 
+way compared to the automated TrainingPipeline class you showed earlier.
+
+This script runs the entire pipeline manually in sequence:
+1) Data Ingestion
+2) Data Validation
+3) Data Transformation
+4) Model Training
+Each stage produces an artifact and passes it to the next stage.
+
+## main.yml file
+This is GitHub Actions CI/CD workflow that:
+1) CI (Continuous Integration)
+Runs on every push to main (ignoring README.md).
+Lints and runs unit tests.
+2) CD (Continuous Delivery)
+Builds & pushes a Docker image to Amazon ECR.
+3)CD (Continuous Deployment)
+Runs on a self-hosted runner (your server/EC2).
+Pulls the latest ECR image.
+Runs the container.
+Cleans up old images/containers.
+
 ### Network Security Projects For Phising Data
 
 Setup github secrets:
