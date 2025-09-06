@@ -139,7 +139,7 @@ Runs on every push to main (ignoring README.md).
 Lints and runs unit tests.
 2) CD (Continuous Delivery)
 Builds & pushes a Docker image to Amazon ECR.
-3)CD (Continuous Deployment)
+3) CD (Continuous Deployment)
 Runs on a self-hosted runner (your server/EC2).
 Pulls the latest ECR image.
 Runs the container.
