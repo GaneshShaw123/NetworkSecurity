@@ -81,7 +81,32 @@ ModelTrainer pipeline does the following:
 5) Logs metrics & model to MLflow/Dagshub.
 6) Saves final model (NetworkModel) and plain sklearn model.
 7) Returns ModelTrainerArtifact.
+
+## estimator.py file
+This is the wrapper that bundles your 
+preprocessor (feature transformation pipeline) and the trained ML model together.
+
+So in short:
+NetworkModel = bundle of preprocessor + trained model with a clean .predict() API.
+
+## utils.py file
+It provides reusable functions like reading/writing files, 
+saving/loading models, and evaluating ML algorithms.
+
+This utils file gives you:
+1) File ops → read/write YAML.
+2) Data ops → save/load arrays.
+3) Model ops → save/load objects.
+4) Evaluation → run hyperparameter tuning + pick best model.
    
+ ## classification_metric.py file
+This function is exactly what we needed to replace r2_score for classification tasks.
+
+This function is much better for your phishing detection project (binary classification).
+
+⚠️ But right now, your evaluate_models in utils is still using r2_score.
+👉 We should update it to use get_classification_score instead, so that the best model selection is based on F1/precision/recall rather than regression metrics.
+ 
 ### Network Security Projects For Phising Data
 
 Setup github secrets:
