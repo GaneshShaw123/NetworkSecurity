@@ -68,7 +68,14 @@ This class:
 4) Detects data drift between train/test.
 5) Saves validated train/test files.
 6) Produces a DataValidationArtifact for the next pipeline stage.
+   
+## data_schema.yaml file 
+This section defines all features + target column (Result) along with their data types.
 
+This way:
+1) columns = schema for data validation
+2) numerical_columns = model features
+3) target_column = label for training
 ## model_trainer.py file
 This class is the heart of your ML pipeline → it picks candidate models, 
 tunes them, evaluates them, tracks experiments with MLflow, and finally saves the best model.
